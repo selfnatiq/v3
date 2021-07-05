@@ -1,7 +1,7 @@
 import React from 'react'
 
 const index = () => {
-	return <div>Hello World</div>
+	return <h1>Work in Progress...</h1>
 }
 
 export default index
