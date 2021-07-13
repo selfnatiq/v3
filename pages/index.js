@@ -1,25 +1,28 @@
-import FeaturedProject from '@components/FeaturedProject'
-import styles from '@styles/Index.module.css'
-
 const Index = () => {
 	return (
-		<section>
-			<h1 className={styles.heading}>
-				I’m Natiq Mumtaz, a design-minded web developer focused on building beautiful
-				interfaces & experiences
-			</h1>
-			<div>
-				<h2 className={styles.featured}>Featured Projects</h2>
-				<FeaturedProject
-					image="https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&h=650&w=940"
-					name="Monty"
-					desc="Monty aims at shaping the future of customer experience 
-					monitoring, by organising Swisscom’s information and 
-					making it accessible and useful to better understand 
-					and serve our customers."
-				/>
+		<>
+			<h1 className="text-2xl font-bold mb-4">Who am I?</h1>
+
+			<div className="text-gray-800 text-lg space-y-8">
+				<p>
+					My goal in life is to always love what I&apos;m doing. This includes my work and
+					my past times - I want to love it all. I am currently completing my
+					Apprenticeship as a computer scientist-EFZ. I am discovering living and learning
+					as a young adult and where I want my professional career to take me.
+				</p>
+
+				<p>
+					My career interests lie in Web-Development / Designing, Software Engineer, and
+					Networking. Highly motivated Front and Back-End-Developer with amazing Designs.
+					I started to learn programming on my own.
+				</p>
+
+				<p>
+					When I&apos;m not programming, I&apos;m probably hanging out with my friends and
+					family, doing Sports, or learning new things.
+				</p>
 			</div>
-		</section>
+		</>
 	)
 }
 

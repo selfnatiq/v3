@@ -1,11 +1,15 @@
-import React from 'react'
+import Head from 'next/head'
 
-const Index = () => {
+const Mems = () => {
 	return (
 		<div>
-			<h1>All memories</h1>
+			<Head>
+				<title>Mems - Natiq Mumtaz</title>
+			</Head>
+
+			<h1>Mems</h1>
 		</div>
 	)
 }
 
-export default Index
+export default Mems
