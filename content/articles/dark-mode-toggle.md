@@ -1,9 +1,9 @@
 ---
 title: Dark Mode Toggle
 description: Dark mode without the flash of default theme
-date: 2021-04-21
+date: July 5, 2020
 draft: false
-slug: /pensieve/dark-mode-toggle
+slug: dark-mode-toggle
 tags:
     - Theming
     - Dark Mode

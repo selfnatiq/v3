@@ -60,12 +60,12 @@ const Header = () => {
 				</button>
 
 				{isOpen && (
-					<nav className="absolute bg-white left-3 top-20 bottom-3 right-3 flex flex-col p-7">
+					<nav className="absolute z-10 bg-white left-3 top-24 bottom-0 right-3 flex flex-col p-7">
 						{paths.map((path) => (
 							<Link key={path.name} href={path.href}>
 								<a
 									onClick={toggle}
-									className="p-2 text-lg font-bold block text-gray-700 hover:text-blue-900 transition"
+									className="p-2 text-lg font-bold block text-gray-900 hover:text-blue-700 transition"
 								>
 									{path.name}
 								</a>
