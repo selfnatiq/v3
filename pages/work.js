@@ -14,19 +14,33 @@ const Work = ({ jobs, featured, other }) => {
 				<title>Work - Natiq Mumtaz</title>
 			</Head>
 			<h1 className="text-3xl font-bold mb-4">Where I&apos;ve worked</h1>
-			{jobs.map((job) => (
-				<Experience key={job.data.title} job={job} />
-			))}
 
-			<h2 className="text-xl font-bold mb-4 mt-12">Some things I&apos;ve built</h2>
-			{featured.map((project) => (
-				<FeaturedProject key={project.data.title} project={project} />
-			))}
+			{/* experience */}
+			<section>
+				{jobs.map((job) => (
+					<Experience key={job.data.title} job={job} />
+				))}
+			</section>
 
-			<h2 className="text-xl font-bold my-4 mt-12">Other amazing projects</h2>
-			{other.map((project) => (
-				<OtherProject key={project.data.title} project={project} />
-			))}
+			{/* featured projects */}
+			<section>
+				<h2 className="text-xl font-bold mb-4 mt-12">Some things I&apos;ve built</h2>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
+					{featured.map((project) => (
+						<FeaturedProject key={project.data.title} project={project} />
+					))}
+				</div>
+			</section>
+
+			{/* other projects */}
+			<section>
+				<h2 className="text-xl font-bold my-4 mt-12">Other amazing projects</h2>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
+					{other.map((project) => (
+						<OtherProject key={project.data.title} project={project} />
+					))}
+				</div>
+			</section>
 		</>
 	)
 }

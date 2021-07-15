@@ -4,7 +4,7 @@ const OtherProject = ({ project }) => {
 	const { data, content } = project
 
 	return (
-		<section className="border shadow-sm py-6 px-5 rounded-md mb-5">
+		<section className="border shadow-sm py-6 px-5 rounded-md">
 			<div className="flex justify-between items-center">
 				<h2 className="text-2xl font-bold">{data.title}</h2>
 				<div className="flex gap-1">

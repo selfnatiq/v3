@@ -5,7 +5,7 @@ const FeaturedProject = ({ project }) => {
 	const { data, content } = project
 
 	return (
-		<section className="border shadow-sm py-6 px-5 rounded-md mb-5">
+		<section className="border shadow-sm py-6 px-5 rounded-md">
 			<span className="text-xs">Featured Project</span>
 			<h2 className="text-2xl font-bold">{data.title}</h2>
 

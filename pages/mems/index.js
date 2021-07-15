@@ -14,13 +14,17 @@ const Mems = ({ page, articles }) => {
 			</Head>
 
 			<div
-				className="prose lg:prose-lg 2xl:prose-xl"
+				className="prose lg:prose-lg 2xl:prose-xl mb-5"
 				dangerouslySetInnerHTML={{ __html: marked(page) }}
 			/>
 
-			{articles.map((article) => (
-				<Article key={article.slug} article={article} />
-			))}
+			<section>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
+					{articles.map((article) => (
+						<Article key={article.slug} article={article} />
+					))}
+				</div>
+			</section>
 		</>
 	)
 }

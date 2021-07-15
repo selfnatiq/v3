@@ -9,7 +9,6 @@ const paths = [
 
 const Header = () => {
 	const [isOpen, setOpen] = useState(false)
-
 	const toggle = () => setOpen((p) => !p)
 
 	return (
@@ -28,7 +27,8 @@ const Header = () => {
 				</a>
 			</Link>
 
-			<div>
+			{/* mobile & mini pads */}
+			<div className="block lg:hidden">
 				<button onClick={toggle}>
 					{isOpen ? (
 						<svg
@@ -74,6 +74,20 @@ const Header = () => {
 					</nav>
 				)}
 			</div>
+
+			{/* laptop & lg screens */}
+			<nav className="hidden lg:flex gap-10">
+				{paths.map((path) => (
+					<Link key={path.name} href={path.href}>
+						<a
+							onClick={toggle}
+							className="text-lg font-bold text-gray-900 hover:text-blue-700 transition"
+						>
+							{path.name}
+						</a>
+					</Link>
+				))}
+			</nav>
 		</header>
 	)
 }
