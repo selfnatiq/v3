@@ -9,7 +9,7 @@ module.exports = {
 	},
 	variants: {
 		extend: {
-			animation: ['hover'],
+			translate: ['group-hover'],
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],

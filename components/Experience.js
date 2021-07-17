@@ -5,12 +5,12 @@ const Experience = ({ job }) => {
 
 	return (
 		<div className="mb-8">
-			<p className="font-medium">
+			<h3 className="font-semibold text-xl 2xl:text-2xl">
 				{data.title}&nbsp;
 				<a className="text-blue-700" target="_blank" href={data.url} rel="noreferrer">
 					@ <span className="hover:underline">{data.company}</span>
 				</a>
-			</p>
+			</h3>
 
 			<span className="italic text-xs text-gray-700">{data.range}</span>
 			<div
