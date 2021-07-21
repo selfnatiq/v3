@@ -1,10 +1,10 @@
 ---
-date: July 5, 2021
-title: 'UI Engineer Co-op'
+date: August 2, 2019
+title: 'Apprentice Software Developer'
 company: 'Swisscom'
 location: 'Cupertino, CA'
-range: 'July 2016 - December 2017'
-url: 'https://www.swisscom.com'
+range: 'August 2019 - Present'
+url: 'https://www.swisscom.com/'
 ---
 
 -   Developed and shipped highly interactive web applications for Apple Music using Ember.js

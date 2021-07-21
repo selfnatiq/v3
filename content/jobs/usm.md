@@ -1,10 +1,10 @@
 ---
-date: Dec 5, 2020
-title: 'Engineer'
-company: 'Upstatement'
-location: 'Boston, MA'
-range: 'May 2018 - Present'
-url: 'https://www.upstatement.com/'
+date: April 1, 2018
+title: 'Intern - IT Systems & Network Operations'
+company: 'USM Modular Furniture'
+location: 'Münsingen, Switzerland'
+range: 'April 2018 - May 2019'
+url: 'https://www.usm.com/'
 ---
 
 -   Write modern, performant, maintainable code for a diverse array of client and internal projects
