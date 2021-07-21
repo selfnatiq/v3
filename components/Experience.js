@@ -7,7 +7,7 @@ const Experience = ({ job }) => {
 		<div className="mb-8">
 			<h3 className="font-semibold text-xl 2xl:text-2xl">
 				{data.title}&nbsp;
-				<a className="text-blue-700" target="_blank" href={data.url} rel="noreferrer">
+				<a className="text-blue-700" href={data.url} rel="noreferrer">
 					@ <span className="hover:underline">{data.company}</span>
 				</a>
 			</h3>

@@ -1,16 +1,11 @@
 import React, { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { FiMenu } from 'react-icons/fi'
-import { useRouter } from 'next/dist/client/router'
+import Link from 'next/link'
 
 const cx = (...classes) => classes.filter(Boolean).join(' ')
 
 const NavMobile = ({ paths }) => {
-	const router = useRouter()
-
-	const goToPath = (path) => {
-		router.push(path)
-	}
 	return (
 		<Menu as="nav" className="relative inline-block text-left">
 			{({ open }) => (
@@ -39,17 +34,20 @@ const NavMobile = ({ paths }) => {
 								{paths.map((path) => (
 									<Menu.Item key={path.href}>
 										{({ active }) => (
-											<a
-												onClick={() => goToPath(path.href)}
+											<div
+												// onClick={() => goToPath(path.href)}
 												className={cx(
 													active
 														? 'bg-gray-100 text-blue-700'
-														: 'text-gray-700',
-													'block px-4 py-2 text-sm cursor-pointer'
+														: 'text-gray-700'
 												)}
 											>
-												{path.name}
-											</a>
+												<Link href={path.href}>
+													<a className="block px-4 py-2 text-sm cursor-pointer">
+														{path.name}
+													</a>
+												</Link>
+											</div>
 										)}
 									</Menu.Item>
 								))}

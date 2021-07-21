@@ -3,8 +3,20 @@ import '@styles/global.css'
 
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import { useEffect } from 'react'
 
 function MyApp({ Component, pageProps }) {
+	// add target _blank to external links
+	useEffect(() => {
+		const links = [...document.links]
+
+		links.forEach((link) => {
+			if (link.hostname !== location.hostname) {
+				link.target = '_blank'
+			}
+		})
+	})
+
 	return (
 		<>
 			{/* Todo: changes in head must be done */}

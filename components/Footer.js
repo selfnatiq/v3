@@ -7,7 +7,6 @@ const Footer = () => {
 				<a
 					className="hover:text-blue-700"
 					href="https://github.com/selfnatiq"
-					target="_blank"
 					rel="noreferrer"
 				>
 					<FiGithub size="1.3em" />
@@ -15,7 +14,6 @@ const Footer = () => {
 				<a
 					className="hover:text-blue-700"
 					href="https://twitter.com/selfnatiq"
-					target="_blank"
 					rel="noreferrer"
 				>
 					<FiTwitter size="1.3em" />
@@ -23,7 +21,6 @@ const Footer = () => {
 				<a
 					className="hover:text-blue-700"
 					href="https://www.linkedin.com/in/selfnatiq/"
-					target="_blank"
 					rel="noreferrer"
 				>
 					<FiLinkedin size="1.3em" />
@@ -35,7 +32,6 @@ const Footer = () => {
 				<a
 					className="text-blue-700 hover:underline"
 					href="https://nextjs.org/"
-					target="_blank"
 					rel="noreferrer"
 				>
 					nextjs
@@ -44,7 +40,6 @@ const Footer = () => {
 				<a
 					className="text-blue-700 hover:underline"
 					href="https://tailwindcss.com/"
-					target="_blank"
 					rel="noreferrer"
 				>
 					tailwind css
