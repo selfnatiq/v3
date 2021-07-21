@@ -6,10 +6,10 @@ path: '/'
 
 # Who am I?
 
-👋 I'm Natiq, a Software Developer student based in Switzerland🇨🇭 and currently working for [Swisscom](https://www.swisscom.com).
+👋 I'm **Natiq**, a Software Developer student based in Switzerland🇨🇭 and currently working for [Swisscom](https://www.swisscom.com).
 
-My goal in life is to always love what I'm doing. This includes my work and my past times - I want to love it all. I am currently completing my Apprenticeship as a computer scientist-EFZ. I am discovering living and learning as a young adult and where I want my professional career to take me.
+😊 I enjoy designing highly interactive user interfaces that enthuse customers and creating scalable, reliable backend solutions, also caring about other parts that are needed for a successful project.
 
-My career interests lie in Web-Development / Designing, Software Engineer, and Networking. Highly motivated Front and Back-End-Developer with amazing Designs. I started to learn programming on my own.
+👨🏼‍💻 I have maintained, developed and launched multiple projects from scratch, carrying the development of it's backend and frontend codebases. My current toolset includes TypeScript/JavaScript, **React**, Node.js and all the other various frameworks, libraries and technologies related to them.
 
-When I'm not programming, I'm probably hanging out with my friends and family, doing Sports, or learning new things.
+When I'm not programming, I'm probably hanging out with my friends and family 🏡, doing Sports ⚽️, or learning 📝 new things.
