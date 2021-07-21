@@ -1,5 +1,6 @@
 import marked from 'marked'
 import { FiExternalLink } from 'react-icons/fi'
+import { VscGithubInverted } from 'react-icons/vsc'
 
 const OtherProject = ({ project }) => {
 	const { data, content } = project
@@ -8,11 +9,16 @@ const OtherProject = ({ project }) => {
 		<section className="border shadow-sm py-6 px-5 rounded-md">
 			<div className="flex justify-between items-center">
 				<h2 className="text-2xl font-semibold">{data.title}</h2>
-				<div className="flex gap-1">
-					<a href="#" className="hover:text-blue-700 transition">
-						<FiExternalLink size="1.3em" />
-					</a>
-				</div>
+				{data.github && (
+					<div className="flex gap-2">
+						<a href={data.github} className="hover:text-blue-700 transition">
+							<VscGithubInverted size="1.3em" />
+						</a>
+						<a href={data.external} className="hover:text-blue-700 transition">
+							<FiExternalLink size="1.3em" />
+						</a>
+					</div>
+				)}
 			</div>
 
 			<div

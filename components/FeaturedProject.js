@@ -24,15 +24,21 @@ const FeaturedProject = ({ project }) => {
 				))}
 			</div>
 
-			<div className="mt-3 flex gap-2">
-				<a href="#" className="hover:text-blue-700">
-					<VscGithubInverted size="1.3em" />
-				</a>
+			{data.github ? (
+				<div className="mt-3 flex gap-2">
+					<a href={data.github} className="hover:text-blue-700">
+						<VscGithubInverted size="1.3em" />
+					</a>
 
-				<a href="#" className="hover:text-blue-700">
-					<FiExternalLink size="1.3em" />
-				</a>
-			</div>
+					<a href={data.external} className="hover:text-blue-700">
+						<FiExternalLink size="1.3em" />
+					</a>
+				</div>
+			) : (
+				<p className="mt-3 text-gray-500 italic text-sm">
+					No links available, since this is an internal project.
+				</p>
+			)}
 		</section>
 	)
 }

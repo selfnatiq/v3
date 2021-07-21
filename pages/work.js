@@ -28,9 +28,15 @@ const Work = ({ jobs, featured, other }) => {
 					Some things I&apos;ve built
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
-					{featured.map((project) => (
-						<FeaturedProject key={project.data.title} project={project} />
-					))}
+					{featured.length ? (
+						<>
+							{featured.map((project) => (
+								<FeaturedProject key={project.data.title} project={project} />
+							))}
+						</>
+					) : (
+						<p className="text-gray-600 italic">There are no featured projects yet!</p>
+					)}
 				</div>
 			</section>
 
@@ -40,9 +46,15 @@ const Work = ({ jobs, featured, other }) => {
 					Other amazing projects
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
-					{other.map((project) => (
-						<OtherProject key={project.data.title} project={project} />
-					))}
+					{other.length ? (
+						<>
+							{other.map((project) => (
+								<OtherProject key={project.data.title} project={project} />
+							))}
+						</>
+					) : (
+						<p className="text-gray-600 italic">There are no other projects yet!</p>
+					)}
 				</div>
 			</section>
 		</>
@@ -56,8 +68,12 @@ export const getStaticProps = async () => {
 	return {
 		props: {
 			jobs: jobs.sort((a, b) => sortByDate(a.data, b.data)),
-			featured: projects.filter((project) => project.data.featured),
-			other: projects.filter((project) => !project.data.featured),
+			featured: projects.filter(
+				(project) => project.data.featured && project.data.showInProjects
+			),
+			other: projects.filter(
+				(project) => !project.data.featured && project.data.showInProjects
+			),
 		},
 	}
 }
