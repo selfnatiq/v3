@@ -13,18 +13,24 @@ const Mems = ({ page, articles }) => {
 				<title>Mems - Natiq Mumtaz</title>
 			</Head>
 
-			<div
-				className="prose lg:prose-lg 2xl:prose-xl mb-5"
-				dangerouslySetInnerHTML={{ __html: marked(page) }}
-			/>
+			{articles.length ? (
+				<>
+					<div
+						className="prose lg:prose-lg 2xl:prose-xl mb-5"
+						dangerouslySetInnerHTML={{ __html: marked(page) }}
+					/>
 
-			<section>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
-					{articles.map((article) => (
-						<Article key={article.slug} article={article} />
-					))}
-				</div>
-			</section>
+					<section>
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
+							{articles.map((article) => (
+								<Article key={article.slug} article={article} />
+							))}
+						</div>
+					</section>
+				</>
+			) : (
+				<p className="text-gray-600 text-xl">There are no articles yet!</p>
+			)}
 		</>
 	)
 }
