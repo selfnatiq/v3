@@ -25,7 +25,7 @@ const Work = ({ jobs, featured, other }) => {
 			{/* featured projects */}
 			<section>
 				<h2 className="text-2xl font-bold mb-4 mt-12 2xl:text-3xl">
-					Some things I&apos;ve built
+					Some projects I&apos;ve worked on
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
 					{featured.length ? (
@@ -43,7 +43,7 @@ const Work = ({ jobs, featured, other }) => {
 			{/* other projects */}
 			<section>
 				<h2 className="text-2xl font-bold mb-4 mt-12 2xl:text-3xl">
-					Other amazing projects
+					Other remarkable projects
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:grid-cols-3">
 					{other.length ? (
@@ -53,7 +53,7 @@ const Work = ({ jobs, featured, other }) => {
 							))}
 						</>
 					) : (
-						<p className="text-gray-600 italic">There are no other projects yet!</p>
+						<p className="text-gray-600 italic">There are no projects yet!</p>
 					)}
 				</div>
 			</section>
@@ -68,12 +68,12 @@ export const getStaticProps = async () => {
 	return {
 		props: {
 			jobs: jobs.sort((a, b) => sortByDate(a.data, b.data)),
-			featured: projects.filter(
-				(project) => project.data.featured && project.data.showInProjects
-			),
-			other: projects.filter(
-				(project) => !project.data.featured && project.data.showInProjects
-			),
+			featured: projects
+				.filter((project) => project.data.featured && project.data.showInProjects)
+				.sort((a, b) => sortByDate(a.data, b.data)),
+			other: projects
+				.filter((project) => !project.data.featured && project.data.showInProjects)
+				.sort((a, b) => sortByDate(a.data, b.data)),
 		},
 	}
 }

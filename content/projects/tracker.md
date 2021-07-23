@@ -1,6 +1,6 @@
 ---
-title: 'Jira Issue Tracker'
-date: Feb 13, 2020
+date: 2
+title: Jira Issue Tracker
 github: null
 external: null
 tech:
@@ -8,7 +8,7 @@ tech:
     - jQuery
     - Chart.js
     - Jira-Api
-showInProjects: false
+showInProjects: true
 featured: true
 ---
 

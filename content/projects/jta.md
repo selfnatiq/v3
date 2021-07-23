@@ -1,5 +1,5 @@
 ---
-date: Sep 13, 2019
+date: 1
 title: Jira Templater
 github: null
 external: null
@@ -8,7 +8,7 @@ tech:
     - jQuery
     - Bootstrap 4
     - Jira-Api
-showInProjects: false
+showInProjects: true
 featured: true
 ---
 
