@@ -7,6 +7,9 @@ range: 'April 2018 - May 2019'
 url: 'https://www.usm.com/'
 ---
 
--   Write modern, performant, maintainable code for a diverse array of client and internal projects
--   Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify
--   Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis
+-   Worked with computer networks of all kinds of organizations
+-   Provided technical support, and made sure the entire company was running smoothly
+-   Monitored and maintained the company's computer systems
+-   Installed and configured hardware and software, and resolved technical issues as they occurred.
+
+> All of this was done with the help of a great team.

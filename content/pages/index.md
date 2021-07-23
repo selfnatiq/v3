@@ -1,12 +1,12 @@
 ---
-date: July 15, 2021
+date: July 23, 2021
 page: 'index.js'
 path: '/'
 ---
 
 # Who am I?
 
-👋 I'm **Natiq**, a Software Developer student based in Switzerland🇨🇭 and currently working for [Swisscom](https://www.swisscom.com).
+👋 I'm **Natiq**, a Software Developer student based in Switzerland 🇨🇭 and currently working for [Swisscom](https://www.swisscom.com).
 
 😊 I enjoy designing highly interactive user interfaces that enthuse customers and creating scalable, reliable backend solutions, also caring about other parts that are needed for a successful project.
 

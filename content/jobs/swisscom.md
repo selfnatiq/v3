@@ -7,7 +7,9 @@ range: 'August 2019 - Present'
 url: 'https://www.swisscom.com/'
 ---
 
--   Developed and shipped highly interactive web applications for Apple Music using Ember.js
--   Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal APIs
--   Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser
--   Contributed extensively to MusicKit.js, a JavaScript framework that allows developers to add an Apple Music player to their web apps
+-   Working on highly interactive web applications
+-   Working with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis
+-   Working with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, React, Vue and Strapi
+-   Developed a Jira Template Management web application. This app allows users to create their own Jira templates and efficiently upload stories to Jira using REST API
+-   Also worked on Jira Tracker web app that tracks Jira issues. View worklogs with Time charts. Dashboard about daily overview, weekly overview, and Sprint overview. Mainly users can post thier work logs easily
+-   Worked with a team of many apprentices and maintained and shipped highly interactive applications
