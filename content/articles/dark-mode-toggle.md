@@ -1,9 +1,9 @@
 ---
 title: Dark Mode Toggle
 description: Dark mode without the flash of default theme
-date: 2021-04-21
-draft: false
-slug: /pensieve/dark-mode-toggle
+date: July 5, 2020
+draft: true
+slug: dark-mode-toggle
 tags:
     - Theming
     - Dark Mode
@@ -63,7 +63,6 @@ Dark mode toggle without the flash of default theme. Important bits:
 	--bg: #ffffff;
 	--text: #000000;
 }
-
 [data-theme='dark'] {
 	--bg: #000000;
 	--text: #ffffff;
@@ -72,22 +71,18 @@ Dark mode toggle without the flash of default theme. Important bits:
 
 ## JavaScript
 
-```js:title=app.js
-const themeToggleBtn = document.querySelector('.js-theme-toggle');
-
-themeToggleBtn.addEventListener('click', () => onToggleClick());
-
+```js
+const themeToggleBtn = document.querySelector('.js-theme-toggle')
+themeToggleBtn.addEventListener('click', () => onToggleClick())
 const onToggleClick = () => {
-  const { theme } = document.documentElement.dataset;
-  const themeTo = theme && theme === 'light' ? 'dark' : 'light';
-  const label = `Activate ${theme} mode`;
-
-  document.documentElement.setAttribute('data-theme', themeTo);
-  localStorage.setItem('theme', themeTo);
-
-  themeToggleBtn.setAttribute('aria-label', label);
-  themeToggleBtn.setAttribute('title', label);
-};
+	const { theme } = document.documentElement.dataset
+	const themeTo = theme && theme === 'light' ? 'dark' : 'light'
+	const label = `Activate ${theme} mode`
+	document.documentElement.setAttribute('data-theme', themeTo)
+	localStorage.setItem('theme', themeTo)
+	themeToggleBtn.setAttribute('aria-label', label)
+	themeToggleBtn.setAttribute('title', label)
+}
 ```
 
 ## Resources
