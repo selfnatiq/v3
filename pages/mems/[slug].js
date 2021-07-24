@@ -1,10 +1,10 @@
+import Head from 'next/head'
 import Link from 'next/link'
-
 import marked from 'marked'
+import { FiArrowLeft } from 'react-icons/fi'
+
 import { getArticles, getArticle } from '@libs/article'
 import { localStringDate } from '@libs/utils'
-import { FiArrowLeft } from 'react-icons/fi'
-import Head from 'next/head'
 
 const Mem = ({ article }) => {
 	const { data, content } = article

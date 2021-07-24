@@ -1,5 +1,6 @@
-import { getPage } from '@libs/page'
 import marked from 'marked'
+
+import { getPage } from '@libs/page'
 
 const Index = ({ page }) => (
 	<div
