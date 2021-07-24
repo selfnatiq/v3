@@ -11,13 +11,21 @@ const OtherProject = ({ project }) => {
 				<h2 className="text-xl lg:text-2xl font-semibold">{data.title}</h2>
 				<div className="flex gap-2">
 					{data.github && (
-						<a href={data.github} className="hover:text-blue-700 transition">
+						<a
+							href={data.github}
+							className="hover:text-blue-700 transition"
+							aria-label="Github"
+						>
 							<VscGithubInverted size="1.3em" />
 						</a>
 					)}
 
 					{data.external && (
-						<a href={data.external} className="hover:text-blue-700 transition">
+						<a
+							href={data.external}
+							className="hover:text-blue-700 transition"
+							aria-label="Website"
+						>
 							<FiExternalLink size="1.3em" />
 						</a>
 					)}

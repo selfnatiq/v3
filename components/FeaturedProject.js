@@ -24,13 +24,21 @@ const FeaturedProject = ({ project }) => {
 			{data.github || data.external ? (
 				<div className="mt-3 flex gap-2">
 					{data.github && (
-						<a href={data.github} className="hover:text-blue-700 transition">
+						<a
+							href={data.github}
+							className="hover:text-blue-700 transition"
+							aria-label="Github"
+						>
 							<VscGithubInverted size="1.3em" />
 						</a>
 					)}
 
 					{data.external && (
-						<a href={data.external} className="hover:text-blue-700 transition">
+						<a
+							href={data.external}
+							className="hover:text-blue-700 transition"
+							aria-label="Website"
+						>
 							<FiExternalLink size="1.3em" />
 						</a>
 					)}
