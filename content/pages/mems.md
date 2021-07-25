@@ -8,6 +8,4 @@ path: '/mems'
 
 > _something remembered from the past._
 
-Over the years I've published a few dozen articles — some more noteworthy than others.
-
-Here are some of my latest:
+Here are some of my latest articles:

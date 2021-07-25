@@ -11,7 +11,7 @@ const Article = ({ article }) => {
 			<p className="italic text-xs text-gray-600 mb-3">{localStringDate(date)}</p>
 			<p className="text-gray-600 mb-3">{description}</p>
 			<Link href={`/mems/${slug}`}>
-				<a className="hover:text-blue-700 transition text-sm group flex items-center">
+				<a className="text-blue-700 transition text-sm group flex items-center">
 					Read this article&nbsp;
 					<span className="transform group-hover:translate-x-1.5 transition-all inline-block">
 						<FiArrowRight />

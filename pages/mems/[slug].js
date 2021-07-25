@@ -16,7 +16,7 @@ const Mem = ({ article }) => {
 			</Head>
 			<article>
 				<Link href="/mems">
-					<a className="hover:text-blue-700 transition flex items-center group gap-1">
+					<a className="text-blue-700 transition flex items-center group gap-1">
 						<span className="transform group-hover:-translate-x-1.5 transition-all inline-block">
 							<FiArrowLeft />
 						</span>
