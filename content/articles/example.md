@@ -2,7 +2,7 @@
 title: Example
 description: Note again how the actual text starts at 4 columns in 4 characters
 date: July 25, 2021
-draft: false
+draft: true
 slug: example
 tags:
     - Sample
