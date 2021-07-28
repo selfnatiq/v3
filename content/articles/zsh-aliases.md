@@ -1,9 +1,12 @@
-To try it out if you have just cloned it (to your home directory):
-
-```shell
-source ~/.oh-my-zsh/templates/zshrc.zsh-template
-```
-
+---
+title: ZSH Aliases
+description: Some of my terminal aliases that I use on a daily basis
+date: July 28, 2020
+draft: false
+slug: zsh-aliases
+tags:
+    - ZSH
+    - Terminal
 ---
 
 ## Commands
@@ -20,28 +23,6 @@ source ~/.oh-my-zsh/templates/zshrc.zsh-template
 | `exec zsh`            | Apply changes made to zshrc
 
 ---
-
-### Alias
-
-| Flag  | Description                                     |
-|:------|:------------------------------------------------|
-| L     | print each alias in the form of calls to alias  |
-| g     | list or define global aliases                   |
-| m     | print aliases matching specified pattern        |
-| r     | list or define regular aliases                  |
-| s     | list or define suffix aliases                   |
-
-## Tab-completion
-
-| For options and helpful text of what they do |
-|:--------------------------------------------:|
-| _ls -(tab)_                                  |
-| _cap (tab)_                                  |
-| _rake (tab)_                                 |
-| _ssh (tab)_                                  |
-| _sudo umount (tab)_                          |
-| _kill (tab)_                                 |
-| _unrar (tab)_                                |
 
 ## Directory
 
@@ -212,87 +193,3 @@ See `~/.oh-my-zsh/lib/directories.zsh`
 | grb publish $(current_branch) origin                                   |
 
 You also find these commands in Dash as a Cheat-sheet.
-
-## Editors
-
-| Alias | Command                                                                  |
-|:------|:-------------------------------------------------------------------------|
-| _stt_ | (When using `sublime` plugin) Open current directory in Sublime Text 2/3 |
-| _v_   | (When using `vi-mode` plugin) Edit current command line in Vim           |
-
-## Symfony2
-
-| Alias        | Command                     |
-|:-------------|:----------------------------|
-| _sf_         | php ./app/console           |
-| _sfcl_       | php app/console cache:clear |
-| _sfcontainer_| sf debug:container          |
-| _sfcw_       | sf cache:warmup             |
-| _sfgb_       | sf generate:bundle          |
-| _sfroute_    | sf debug:router             |
-| _sfsr_       | sf server:run -vvv          |
-
-## tmux
-
-| Alias | Command             |
-|:------|:--------------------|
-| _ta_  | tmux attach -t      |
-| _tad_ | tmux attach -d -t   |
-| _ts_  | tmux new-session -s |
-| _tl_  | tmux list-sessions  |
-| _tksv_| tmux kill-server    |
-| _tkss_| tmux kill-session -t|
-
-## Systemd
-
-### systemctl
-
-| Command           | Description                              |
-|:------------------|:-----------------------------------------|
-| _sc-status NAME_  | show the status of the NAME process      |
-| _sc-show NAME_    | show the NAME systemd .service file      |
-| _sc-start NAME_   | start the NAME process                   |
-| _sc-stop NAME_    | stop the NAME process                    |
-| _sc-restart NAME_ | restart the NAME process                 |
-| _sc-enable NAME_  | enable the NAME process to start at boot |
-| _sc-disable NAME_ | disable the NAME process at boot         |
-
-
-## Rails
-
-### Rails Aliases
-
-| Alias    | Command                       |
-| :------- | :---------------------------- |
-| _rc_     | rails console                 |
-| _rcs_    | rails console --sandbox       |
-| _rd_     | rails destroy                 |
-| _rdb_    | rails dbconsole               |
-| _rg_     | rails generate                |
-| _rgm_    | rails generate migration      |
-| _rp_     | rails plugin                  |
-| _ru_     | rails runner                  |
-| _rs_     | rails server                  |
-| _rsd_    | rails server --debugger       |
-| _rsp_    | rails server --port           |
-
-
-### RAILS_ENV Aliases
-
-| Alias    | Command                       |
-| :------- | :---------------------------- |
-| _RED_    | RAILS_ENV=development         |
-| _REP_    | RAILS_ENV=production          |
-| _RET_    | RAILS_ENV=test                |
-
-## zoxide
-
-| Command     | Description                                                 |
-| :---------- | :---------------------------------------------------------- |
-| `z foo`     | `cd` into highest ranked directory matching `foo`           |
-| `z foo bar` | `cd` into highest ranked directory matching `foo` and `bar` |
-| `z ~/foo`   | `z` also works like a regular `cd` command                  |
-| `z foo/`    | `cd` into relative path                                     |
-| `z ..`      | `cd` one level up                                           |
-| `z -`       | `cd` into previous directory                                |
-| `zi foo `   | `cd` with interactive selection (using `fzf`)               |
