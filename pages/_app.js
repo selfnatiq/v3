@@ -48,6 +48,10 @@ function MyApp({ Component, pageProps }) {
 				<meta name="twitter:image" content={siteMeta.url + siteMeta.og} />
 
 				<meta property="fb:app_id" content="128287456084122" />
+				<meta
+					name="facebook-domain-verification"
+					content="8314dvk6kdwz4egrkxcrto0mwi8ufo"
+				/>
 
 				<link rel="icon" type="image/png" href="/favicon.png" />
 			</Head>
