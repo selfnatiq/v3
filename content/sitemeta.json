@@ -2,7 +2,7 @@
     "title": "Natiq Mumtaz",
     "description": "Hi, I’m Natiq. I’m a software developer student living in Switzerland. I code (very cool) digital products and websites that help businesses empower and connect with their users.",
     "url": "https://natiqmumtaz.com",
-    "og": "/static/og.jpg",
-    "ogWork": "/static/og-work.jpg",
-    "ogMems": "/static/og-mems.jpg"
+    "og": "/static/og.png",
+    "ogWork": "/static/og-work.png",
+    "ogMems": "/static/og-mems.png"
 }
