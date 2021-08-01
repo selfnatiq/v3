@@ -7,7 +7,7 @@ const siteMeta = {
 	title: 'Natiq Mumtaz',
 	description:
 		'Hi, I’m Natiq. I’m a software developer student living in Switzerland. I code (very cool) digital products and websites that help businesses empower and connect with their users.',
-	url: 'https: //natiqmumtaz.com',
+	url: 'https://natiqmumtaz.com',
 	image: '/me.jpg',
 }
 
