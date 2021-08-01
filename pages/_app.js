@@ -38,6 +38,7 @@ function MyApp({ Component, pageProps }) {
 				<meta property="og:site_name" content={siteMeta.title} />
 				<meta property="og:image" content={siteMeta.url + siteMeta.og} />
 				<meta property="og:description" content={siteMeta.description} />
+				<meta property="og:image:alt" content={siteMeta.title} />
 
 				<meta name="twitter:title" content={siteMeta.title} />
 				<meta name="twitter:card" content="summary_large_image" />
@@ -45,6 +46,8 @@ function MyApp({ Component, pageProps }) {
 				<meta name="twitter:creator" content="@selfnatiq" />
 				<meta name="twitter:description" content={siteMeta.description} />
 				<meta name="twitter:image" content={siteMeta.url + siteMeta.og} />
+
+				<meta property="fb:app_id" content="128287456084122" />
 
 				<link rel="icon" type="image/png" href="/favicon.png" />
 			</Head>
