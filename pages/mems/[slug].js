@@ -18,7 +18,6 @@ const Mem = ({ article }) => {
 
 				{/* og properties */}
 				<meta property="og:title" content={`${data.title} - Natiq Mumtaz`} />
-				<meta property="og:url" content="https://v3.natiqmumtaz.com" />
 				<meta property="og:site_name" content={`${data.title} - Natiq Mumtaz`} />
 				<meta property="og:description" content={data.description} />
 
