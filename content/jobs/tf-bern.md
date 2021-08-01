@@ -7,7 +7,7 @@ range: 'August 2017 - June 2019'
 url: 'https://www.tfbern.ch/'
 ---
 
--   Wordek with office tools and configured them
+-   Worked with office tools and configured them
 -   Upgraded and build personal computer into operation
 -   Put peripheral devices into operation
 -   Realized IT and network infrastructure

@@ -1,10 +1,10 @@
+import Head from 'next/head'
 import Link from 'next/link'
-
 import marked from 'marked'
+import { FiArrowLeft } from 'react-icons/fi'
+
 import { getArticles, getArticle } from '@libs/article'
 import { localStringDate } from '@libs/utils'
-import { FiArrowLeft } from 'react-icons/fi'
-import Head from 'next/head'
 
 const Mem = ({ article }) => {
 	const { data, content } = article
@@ -16,7 +16,7 @@ const Mem = ({ article }) => {
 			</Head>
 			<article>
 				<Link href="/mems">
-					<a className="hover:text-blue-700 transition flex items-center group gap-1">
+					<a className="text-blue-700 transition flex items-center group gap-1">
 						<span className="transform group-hover:-translate-x-1.5 transition-all inline-block">
 							<FiArrowLeft />
 						</span>

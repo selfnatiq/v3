@@ -13,3 +13,5 @@ featured: true
 ---
 
 A web app that tracks Jira issues. View your Worklogs, Time chart, daily overview, weekly overview, and Sprint overview. Post your work logs efficiently.
+
+> Built at Swisscom

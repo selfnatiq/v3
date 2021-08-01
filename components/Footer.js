@@ -8,6 +8,7 @@ const Footer = () => {
 					className="hover:text-blue-700"
 					href="https://github.com/selfnatiq"
 					rel="noreferrer"
+					aria-label="Github"
 				>
 					<FiGithub size="1.3em" />
 				</a>
@@ -15,6 +16,7 @@ const Footer = () => {
 					className="hover:text-blue-700"
 					href="https://twitter.com/selfnatiq"
 					rel="noreferrer"
+					aria-label="Twitter"
 				>
 					<FiTwitter size="1.3em" />
 				</a>
@@ -22,6 +24,7 @@ const Footer = () => {
 					className="hover:text-blue-700"
 					href="https://www.linkedin.com/in/selfnatiq/"
 					rel="noreferrer"
+					aria-label="Linkedin"
 				>
 					<FiLinkedin size="1.3em" />
 				</a>

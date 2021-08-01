@@ -5,7 +5,7 @@ import NavMobile from './NavMobile'
 
 const paths = [
 	{ name: 'Work', href: '/work' },
-	// { name: 'Mems', href: '/mems' },
+	{ name: 'Mems', href: '/mems' },
 ]
 
 const Header = () => {

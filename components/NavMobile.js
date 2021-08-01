@@ -11,7 +11,10 @@ const NavMobile = ({ paths }) => {
 			{({ open }) => (
 				<>
 					<div>
-						<Menu.Button className="inline-flex justify-center w-full">
+						<Menu.Button
+							className="inline-flex justify-center w-full"
+							aria-label="Menu"
+						>
 							<FiMenu size="2em" />
 						</Menu.Button>
 					</div>
