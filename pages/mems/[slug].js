@@ -5,6 +5,7 @@ import { FiArrowLeft } from 'react-icons/fi'
 
 import { getArticles, getArticle } from '@libs/article'
 import { localStringDate } from '@libs/utils'
+import siteMeta from '@content/sitemeta.json'
 
 const Mem = ({ article }) => {
 	const { data, content } = article
@@ -18,11 +19,13 @@ const Mem = ({ article }) => {
 
 				{/* og properties */}
 				<meta property="og:title" content={`${data.title} - Natiq Mumtaz`} />
+				<meta property="og:image" content={siteMeta.url + siteMeta.ogMems} />
 				<meta property="og:site_name" content={`${data.title} - Natiq Mumtaz`} />
 				<meta property="og:description" content={data.description} />
 
 				<meta name="twitter:title" content={`${data.title} - Natiq Mumtaz`} />
 				<meta name="twitter:description" content={data.description} />
+				<meta name="twitter:image" content={siteMeta.url + siteMeta.ogMems} />
 			</Head>
 			<article>
 				<Link href="/mems">

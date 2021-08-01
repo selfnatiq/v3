@@ -6,12 +6,15 @@ import Experience from '@components/Experience'
 import { getProjects } from '@libs/project'
 import { getJobs } from '@libs/job'
 import { sortByDate } from '@libs/utils'
+import siteMeta from '@content/sitemeta.json'
 
 const Work = ({ jobs, featured, other }) => {
 	return (
 		<>
 			<Head>
 				<title>Work - Natiq Mumtaz</title>
+				<meta property="og:image" content={siteMeta.url + siteMeta.ogWork} />
+				<meta name="twitter:image" content={siteMeta.url + siteMeta.ogWork} />
 			</Head>
 			<h1 className="text-4xl font-bold mb-4 2xl:text-5xl">Where I&apos;ve worked</h1>
 

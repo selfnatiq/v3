@@ -5,12 +5,15 @@ import Article from '@components/Article'
 import { getArticles } from '@libs/article'
 import { sortByDate } from '@libs/utils'
 import { getPage } from '@libs/page'
+import siteMeta from '@content/sitemeta.json'
 
 const Mems = ({ page, articles }) => {
 	return (
 		<>
 			<Head>
 				<title>Mems - Natiq Mumtaz</title>
+				<meta property="og:image" content={siteMeta.url + siteMeta.ogMems} />
+				<meta name="twitter:image" content={siteMeta.url + siteMeta.ogMems} />
 			</Head>
 
 			{articles.length ? (
