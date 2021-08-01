@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }) {
 
 				<meta name="twitter:title" content={siteMeta.title} />
 				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:site" content="@selfnatiq" />
 				<meta name="twitter:creator" content="@selfnatiq" />
 				<meta name="twitter:description" content={siteMeta.description} />
 				<meta name="twitter:image" content={siteMeta.url + siteMeta.og} />
