@@ -15,7 +15,7 @@ const Header = () => {
 				<a className="flex items-center gap-4">
 					<Image
 						className="rounded-full"
-						src="/me.jpg"
+						src="/natiq-white-bg.png"
 						height={50}
 						width={50}
 						layout="fixed"
